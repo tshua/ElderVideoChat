@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Window - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="jquery-easyui-1.4.5/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="jquery-easyui-1.4.5/themes/icon.css">
+	<script type="text/javascript" src="jquery-easyui-1.4.5/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-easyui-1.4.5/jquery.easyui.min.js"></script>	
+	<script type="text/javascript">
+			$(document).ready(function(e) {
+    		$('#dlg').dialog('close');
+    		$('#okcancle').hide();
+    		$('#grzx').hide();
+    		$('#younggif').hide();
+    		$('#phonecome').hide();
+    		$('#off').hide();
+    		$('#shezhi').hide();
+    		$('#lianxirenui').hide();
+		});
+	</script>
+
+	<style type="text/css">
+
+	.a{
+		padding:10px 20px;
+	}
+
+	.abig{
+		margin-top: 30px;
+		margin-left: 30px;
+		padding:80px 300px;
+	}
+
+	.bold{
+		font-size: 20px;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+	.image{
+		width:145px;
+		height:137px;
+		text-align:center;
+		position:relative;
+		float:left;
+		border:1px solid green;
+	}
+	.nicheng{
+		position:relative;
+		top:13px;
+		left:25px;
+	}
+	.lxr{
+		padding-left: 5px;
+		margin-top: 5px;
+
+	}
+	.lxrimg{
+		width:90px;
+		height:90px;
+	}
+	</style>
+
+</head>
+<body bgcolor="#eee">
+
+	<div id="win" class="easyui-window" title="简易模式" style="background-color:#eee;width:100%;top:5px;height:960px;padding:5px;">
+
+		<div class="easyui-layout" data-options="fit:true">
+			<div data-options="region:'west',split:true" style="width:20%">
+				<div data-options="region:'center'" style="padding:10px;">
+
+					<div class="nicheng">
+
+						<div class="bold">账号：18716001234</div>
+						<div class="bold">状态：在线 <span style="font-size:20px;color:green;">■</span></div>
+					</div>
+					<div style="clear:both;"></div>
+				</div>	
+				<hr style="position:relative;top:5px;color:#eee;">
+				<div data-options="region:'south'" style="padding:10px;">
+
+				
+
+							<!--lianxiren-->
+							
+								<div id='lianxiren' class=".lxr">
+									<table border-bottom="0" width="100%">
+										<tr  id='lxr1'>
+											<td width="20%"><img src="images/guinv.jpg"  align="bottom" class="lxrimg"/></td>
+											<td align="center" width="60%"><span style="font-size: 30px;font-weight: bold;margin-left: 20px;">闺女</span> </td>
+											<td width="20%"><div style="background-color:green;padding:30px"> </div> </td>
+										</tr>	
+										<tr id='lxr2'>
+											
+											<td width="20%">
+												
+													<img src="images/erzi.jpg"  align="bottom" class="lxrimg"/>
+										
+											</td>
+											<td align="center" width="60%"><span style="font-size: 30px;font-weight: bold;margin-left: 20px;">儿子</span> </td>
+											<td width="20%"><div style="background-color:green;padding:30px"> </div> </td>
+
+										</tr>	
+										<tr id='lxr3'>
+											<td width="20%"><img src="images/sunzi.jpg"  align="bottom" class="lxrimg"/></td>
+											<td align="center" width="60%"><span style="font-size: 30px;font-weight: bold;margin-left: 20px;">孙子</span> </td>
+											<td width="20%"><div style="background-color:#C0C0C0;padding:30px"> </div> </td>
+										</tr>	
+										<tr id='addlxr'style="display:none">
+											<td width="20%"><img src="images/sunnv.jpg"  align="bottom" class="lxrimg"/></td>
+											<td align="center" width="60%"><span style="font-size: 30px;font-weight: bold;margin-left: 20px;">孙女</span> </td>
+											<td width="20%"><div style="background-color:#C0C0C0;padding:30px"> </div> </td>
+										</tr>							
+									</table>
+
+								</div>
+								
+							<!--lxrend-->	
+
+
+						
+
+
+
+							<!--shezhi-->
+							
+								<div id='shezhi'class=".lxr">
+									<table border-bottom="0" width="100%" cellspacing="30">
+										<tr  >
+											<td align="center" width="60%"><span style="font-size: 30px;font-weight: bold;margin-left: 20px;">简易模式</span> </td>
+											<td width="20%"><input class="easyui-switchbutton" unchecked> </td>
+											
+										</tr>	
+										<tr  id='zhgl'>
+											<td align="center" width="60%"><a href="#" onclick="$('#call').hide();$('#lxrxx').hide();$('#thjl').hide();$('#grzx').show();$('#okcancle').show();"><span style="font-size: 30px;font-weight: bold;margin-left: 20px;">账号管理</span></td>
+											<td width="20%"><span class="blod">>></span> </td>
+											
+										</tr>	
+										<tr  >
+											<td align="center" width="60%"><span style="font-size: 30px;font-weight: bold;margin-left: 20px;">勿扰模式</span> </td>
+											<td width="20%"><input class="easyui-switchbutton" checked> </td>
+											
+										</tr>	
+										<tr  >
+											<td align="center" width="60%"><span style="font-size: 30px;font-weight: bold;margin-left: 20px;">字体设计</span> </td>
+											<td width="20%"><span class="blod">>></span> </td>
+										</tr>	
+
+										<tr  >
+											<td align="center" width="60%"><a href="#" onclick="$('#call').hide();$('#lxrxx').hide();$('#thjl').hide();$('#phonecome').show();"><span style="font-size: 30px;font-weight: bold;margin-left: 20px;">模拟来电</span></a></td>
+											<td width="20%"><span class="blod">>></span> </td>
+										</tr>	
+
+										<tr  >
+											<td align="center" width="60%"><a href="#" onclick="$('#dlg').dialog('open');"><span style="font-size: 30px;font-weight: bold;margin-left: 20px;">添加联系人</span></a></td>
+											<td width="20%"><span class="blod">>></span> </td>
+										</tr>	
+							
+									</table>
+
+								</div>
+								
+							<!--shezhiend-->
+						</div>	
+
+						
+					
+
+				
+
+				<!--设置-->
+				<div id="shezhiui" align="center" style="margin:290px 0 0 0px">
+					<a href="javascript:void(0)" onclick="$('#lianxiren').hide();$('#shezhi').show();$('#shezhiui').hide();$('#lianxirenui').show();"><img width="340px" height="180px" src="images/shezhi.png"/></a>
+				</div>
+
+				<!--联系人-->
+				<div id="lianxirenui" align="center" style="margin:150px 0 0 0px">
+					<a href="javascript:void(0)" onclick="$('#lianxiren').show();$('#shezhi').hide();$('#shezhiui').show();$('#lianxirenui').hide();"><img width="340px" height="180px" src="images/lianxiren.png"/></a>
+				</div>
+
+			</div>
+
+
+			<div id="dlg" class="easyui-dialog" title="添加好友" data-options="iconCls:'icon-save'" style="width:400px;height:300px;padding:10px">
+				<div align="center">
+					<span class="blod">账号：</span><input type="text"/>
+						<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search'" style="margin-left:10px;width:80px" onclick="$('#search').show()">搜索</a>
+						<hr/>
+						<table id="search" style="display:none">
+							<tr >
+								<td width="20%"><img src="images/sunnv.jpg"  align="bottom" class="lxrimg"/></td>
+								<td align="center" width="60%"><span style="font-size: 30px;font-weight: bold;margin-left: 20px;">孙女</span> </td>
+								<td width="20%"><div style="background-color:#C0C0C0;padding:30px"> </div> </td>
+							</tr>							
+						</table>
+
+						<a href="#"  class="easyui-linkbutton a" icon="icon-ok" onclick="$('#addlxr').show();$('#dlg').dialog('close')">添加</a>
+						<a href="#"  class="easyui-linkbutton a" icon="icon-cancel" onclick="$('#search').hide();$('#dlg').dialog('close');">取消</a>
+				</div>
+			</div>
+
+			<!--联系人信息-->
+			<div align="center" data-options="region:'center'" style="padding:100px 10px 10px 10px;">
+				<table id='lxrxx' border="1" bgcolor="#CCCC99">
+					<tr>
+						<td  rowspan="3"><img id='lxrtx' src="images/guinv.jpg"  align="bottom" class="lxrimg"/></td>
+						<td ><span class="bold">备注：闺女</span></td>
+					</tr>
+					<tr>
+						<td ><span class="bold">昵称：小样酸Q糖</span></td>
+					</tr>
+					<tr>
+						<td ><span class="bold">账号：18712348765</span></td>
+					</tr>
+				</table>
+
+
+				<div id="thjl">
+				<table  class="easyui-datagrid" title="通话记录" style="width:700px;height:250px"
+					data-options="singleSelect:true,collapsible:true,url:'datagrid_data1.json',method:'get'">
+					<thead>
+						<tr>
+							<th data-options="field:'itemid',width:250">日期</th>
+							<th data-options="field:'productid',width:130">呼入/呼出</th>
+							<th data-options="field:'listprice',width:315">时间</th>
+					</tr>
+					</thead>
+					<tr>
+						<td>2016年6月16日</td>
+						<td>呼入</td>
+						<td>2分23秒</td>
+					</tr>
+					<tr>
+						<td>2016年6月16日</td>
+						<td>呼入</td>
+						<td>2分23秒</td>
+					</tr>
+					<tr>
+						<td>2016年6月16日</td>
+						<td>呼入</td>
+						<td>2分23秒</td>
+					</tr>
+				</table>
+				</div>
+
+
+				<!--账号管理-->
+				<table id='grzx' border="1" bgcolor="#CCCC99">
+					<tr>
+						<td  rowspan="2"><img src="images/guinv.jpg"  align="bottom" class="lxrimg"/></td>
+						<td ><span class="bold">昵称：小样酸Q糖</span></td>
+					</tr>
+
+					<tr>
+						<td ><span class="bold">账号：18712348765</span></td>
+					</tr>
+
+					<tr>
+						<td ><span class="blod"> 原密码：</span></td>
+						<td ><input tyep="text" /></td>
+					</tr>
+
+					<tr>
+						<td ><span class="blod"> 修改密码：</span></td>
+						<td ><input tyep="text" /></td>
+					</tr>
+					<tr>
+						<td ><span class="blod"> 确认密码：</span></td>
+						<td ><input tyep="text" /></td>
+					</tr>
+
+					<tr>
+						<td ><span class="blod"> 绑定手机：</span></td>
+						<td ><input tyep="text" value="18712345678" /></td>
+					</tr>
+
+					<tr>
+						<td ><span class="blod"> 出生日期：</span></td>
+						<td ><input tyep="text" value="1995年2月28日" /></td>
+					</tr>
+
+					<tr>
+						<td ><span class="blod"> 籍贯：</span></td>
+						<td ><input tyep="text" value="中国河北唐山" /></td>
+					</tr>
+
+				</table>
+
+				<!--有人打电话-->
+				<div id="phonecome" align="center" data-options="region:'center'" style="padding-top:100px">
+					<table>
+					<tr >
+					<td colspan="3" align="center"><img width="400px" src="images/yy.jpg" ></td>
+					</tr>
+					<tr>
+						<td><a href="#" onclick="$('#phonecome').hide();$('#younggif').show();$('#off').show();"><img width="300px" src="images/call.jpg" ></a></td>
+						<td><a href="#" onclick="$('#phonecome').hide();$('#call').show();$('#lxrxx').show();$('#thjl').show();"><img width="300px" src="images/off.jpg"></a></td>
+					</tr>
+					</table>
+				</div>
+
+				<!--开始通话-->
+				<div id="younggif" align="center" data-options="region:'center'" style="">
+					<img src="images/younggif.gif">
+				</div>
+
+
+				<!--xuanxiangka-->
+					<div id="call" class="easyui-tabs" style="width:98%;height:300px;margin-top:100px">
+						<div title="功能" data-options="tabWidth:160" style="padding:10px;">
+							<img  src="images/voice.jpg" style="margin-top:10px" />
+							<a href="#" onclick="$('#lxrxx').hide();$('#thjl').hide();$('#younggif').show();$('#call').hide();$('#off').show();" ><img src="images/call.jpg" width="400px" style="margin-left:300px" /></a>
+						
+						</div>
+					</div>
+
+					<div id="off" class="easyui-tabs" style="width:98%;height:300px;margin-top:100px">
+						<div title="功能" data-options="tabWidth:160" style="padding:10px;">
+							<img  src="images/voice.jpg" style="margin-top:10px" />
+							<a href="#" onclick="$('#lxrxx').show();$('#thjl').show();$('#younggif').hide();$('#call').show();$('#off').hide();" ><img  src="images/off.jpg" width="400px" style="margin-left:300px" /></a>
+						
+						</div>
+					</div>
+
+
+				<!--xuanxiangka-->
+					<div id="okcancle" class="easyui-tabs" style="width:98%;height:300px;margin-top:100px">
+						<div title="功能" align="center" data-options="tabWidth:160" style="padding:10px;">
+							
+						<a href="#"  class="easyui-linkbutton abig" icon="icon-ok" onclick="$('#grzx').hide();$('#okcancle').hide();$('#lxrxx').show();$('#thjl').show();$('#call').show();" >确定</a>
+						<a href="#"  class="easyui-linkbutton abig" icon="icon-cancel" onclick="$('#grzx').hide();$('#okcancle').hide();$('#lxrxx').show();$('#thjl').show();$('#call').show();">取消</a>
+						
+						</div>
+					</div>
+
+
+			</div>
+
+		
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>

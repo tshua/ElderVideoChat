@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Window - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="jquery-easyui-1.4.5/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="jquery-easyui-1.4.5/themes/icon.css">
+	<script type="text/javascript" src="jquery-easyui-1.4.5/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-easyui-1.4.5/jquery.easyui.min.js"></script>	
+	<style type="text/css">
+
+	.a{
+		padding:10px 20px;
+	}
+
+	.bold{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	</style>
+
+</head>
+<body bgcolor="#eee">
+
+	<div id="win" class="easyui-window" title="用户登陆" style="background-color:#eee;width:40%;top:300px;padding:5px;">
+		
+	<form style="padding:10px 20px 10px 40px;">
+		<div align="center">
+			<p><span class="bold">手机号: </span><input type="text"><img src="images/phone.jpg" style="margin-left:10px;"></p>
+			<p><span class="bold">密&nbsp码:</span>&nbsp<input type="password"><span style="margin-left:35px;color:red">*</span></p>
+			<input type="checkbox" name="bike" /><span class="bold">记住密码</span>
+			<input type="checkbox" name="car" style="margin-top:20px;margin-left:30px" /><span class="bold">自动登陆</span>
+		</div>
+		<div style="padding:5px;text-align:center;margin-top:30px">
+			<a href="index.html" sytle="padding:30px;" class="easyui-linkbutton a"  icon="icon-ok">登陆</a>
+			
+		</div>
+	</form>
+
+	</div>
+
+</body>
+</html>
